@@ -1,0 +1,13 @@
+# FortiGate-VM first boot - console (CLI)
+# Goal: give port1 a static address to reach the web GUI.
+config system interface
+    edit port1
+        set ip 192.168.9.2/24
+        set allowaccess ping https ssh http
+    next
+end
+
+# Then browse to https://192.168.9.2 and upload the evaluation licence.
+#
+# Hardening note: allow only https/ssh/ping on management interfaces in production
+# (http is enabled here for lab convenience).

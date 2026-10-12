@@ -1,0 +1,23 @@
+# Secrets & keys - never commit
+*.key
+*.pem
+*.pfx
+*.p12
+*.crt
+.env
+*secret*
+*password*
+
+# Large VM / disk images and captures
+*.ova
+*.ovf
+*.vmdk
+*.iso
+*.qcow2
+*.pcap
+*.pcapng
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
